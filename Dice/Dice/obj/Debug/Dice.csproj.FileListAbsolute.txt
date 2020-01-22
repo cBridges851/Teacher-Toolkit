@@ -1,0 +1,10 @@
+D:\Coding Club\Visual Studio\Dice\Dice\bin\Debug\Dice.exe.config
+D:\Coding Club\Visual Studio\Dice\Dice\bin\Debug\Dice.exe
+D:\Coding Club\Visual Studio\Dice\Dice\bin\Debug\Dice.pdb
+D:\Coding Club\Visual Studio\Dice\Dice\obj\Debug\Dice.csprojAssemblyReference.cache
+D:\Coding Club\Visual Studio\Dice\Dice\obj\Debug\Dice.Form1.resources
+D:\Coding Club\Visual Studio\Dice\Dice\obj\Debug\Dice.Properties.Resources.resources
+D:\Coding Club\Visual Studio\Dice\Dice\obj\Debug\Dice.csproj.GenerateResource.cache
+D:\Coding Club\Visual Studio\Dice\Dice\obj\Debug\Dice.csproj.CoreCompileInputs.cache
+D:\Coding Club\Visual Studio\Dice\Dice\obj\Debug\Dice.exe
+D:\Coding Club\Visual Studio\Dice\Dice\obj\Debug\Dice.pdb
