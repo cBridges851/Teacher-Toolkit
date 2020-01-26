@@ -137,6 +137,10 @@ namespace Dice
                 pictureBoxDiceOne.Visible = true;
                 pictureBoxDiceTwo.Visible = false;
                 pictureBoxDiceThree.Visible = false;
+
+                textBoxDiceOne.Visible = true;
+                textBoxDiceTwo.Visible = false;
+                textBoxDiceThree.Visible = false;
             }
         }
 
@@ -149,6 +153,10 @@ namespace Dice
                 pictureBoxDiceOne.Visible = true;
                 pictureBoxDiceTwo.Visible = true;
                 pictureBoxDiceThree.Visible = false;
+
+                textBoxDiceOne.Visible = true;
+                textBoxDiceTwo.Visible = true;
+                textBoxDiceThree.Visible = false;
             }
         }
 
@@ -161,6 +169,10 @@ namespace Dice
                 pictureBoxDiceOne.Visible = true;
                 pictureBoxDiceTwo.Visible = true;
                 pictureBoxDiceThree.Visible = true;
+
+                textBoxDiceOne.Visible = true;
+                textBoxDiceTwo.Visible = true;
+                textBoxDiceThree.Visible = true;
             }
         }
     }
