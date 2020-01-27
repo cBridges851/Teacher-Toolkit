@@ -60,22 +60,23 @@
             this.domainUpDownLevel.Items.Add("Novice");
             this.domainUpDownLevel.Location = new System.Drawing.Point(245, 350);
             this.domainUpDownLevel.Name = "domainUpDownLevel";
-            this.domainUpDownLevel.Size = new System.Drawing.Size(206, 20);
+            this.domainUpDownLevel.Size = new System.Drawing.Size(260, 20);
             this.domainUpDownLevel.TabIndex = 1;
             this.domainUpDownLevel.Text = "Novice";
             // 
             // textBoxOutput
             // 
+            this.textBoxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxOutput.Location = new System.Drawing.Point(15, 36);
             this.textBoxOutput.Multiline = true;
             this.textBoxOutput.Name = "textBoxOutput";
             this.textBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxOutput.Size = new System.Drawing.Size(436, 289);
+            this.textBoxOutput.Size = new System.Drawing.Size(490, 289);
             this.textBoxOutput.TabIndex = 2;
             // 
             // buttonAddStudent
             // 
-            this.buttonAddStudent.Location = new System.Drawing.Point(185, 410);
+            this.buttonAddStudent.Location = new System.Drawing.Point(214, 411);
             this.buttonAddStudent.Name = "buttonAddStudent";
             this.buttonAddStudent.Size = new System.Drawing.Size(88, 38);
             this.buttonAddStudent.TabIndex = 3;
@@ -99,7 +100,7 @@
             this.createGroupProgressBarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(463, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(517, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -141,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 460);
+            this.ClientSize = new System.Drawing.Size(517, 460);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.buttonAddStudent);
             this.Controls.Add(this.textBoxOutput);
