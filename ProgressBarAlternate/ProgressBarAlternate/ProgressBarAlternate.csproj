@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NewGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewGroup.Designer.cs">
+      <DependentUpon>NewGroup.cs</DependentUpon>
+    </Compile>
     <Compile Include="IndividualProgress.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="NewGroup.resx">
+      <DependentUpon>NewGroup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IndividualProgress.resx">
       <DependentUpon>IndividualProgress.cs</DependentUpon>
     </EmbeddedResource>

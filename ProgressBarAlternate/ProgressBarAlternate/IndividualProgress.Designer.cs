@@ -39,6 +39,7 @@
             this.openGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createGroupProgressBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelError = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,12 +77,15 @@
             // 
             // buttonAddStudent
             // 
+            this.buttonAddStudent.BackColor = System.Drawing.Color.RoyalBlue;
+            this.buttonAddStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddStudent.ForeColor = System.Drawing.SystemColors.Info;
             this.buttonAddStudent.Location = new System.Drawing.Point(214, 411);
             this.buttonAddStudent.Name = "buttonAddStudent";
             this.buttonAddStudent.Size = new System.Drawing.Size(88, 38);
             this.buttonAddStudent.TabIndex = 3;
             this.buttonAddStudent.Text = "Add Student";
-            this.buttonAddStudent.UseVisualStyleBackColor = true;
+            this.buttonAddStudent.UseVisualStyleBackColor = false;
             this.buttonAddStudent.Click += new System.EventHandler(this.ButtonAddStudent_Click);
             // 
             // labelName
@@ -95,6 +99,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.createGroupProgressBarToolStripMenuItem});
@@ -106,30 +111,36 @@
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newGroupToolStripMenuItem,
             this.openGroupToolStripMenuItem,
             this.saveGroupToolStripMenuItem});
+            this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newGroupToolStripMenuItem
             // 
+            this.newGroupToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
             this.newGroupToolStripMenuItem.Name = "newGroupToolStripMenuItem";
-            this.newGroupToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.newGroupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newGroupToolStripMenuItem.Text = "New Group";
+            this.newGroupToolStripMenuItem.Click += new System.EventHandler(this.NewGroupToolStripMenuItem_Click);
             // 
             // openGroupToolStripMenuItem
             // 
+            this.openGroupToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
             this.openGroupToolStripMenuItem.Name = "openGroupToolStripMenuItem";
-            this.openGroupToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.openGroupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openGroupToolStripMenuItem.Text = "Open Group";
             // 
             // saveGroupToolStripMenuItem
             // 
+            this.saveGroupToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
             this.saveGroupToolStripMenuItem.Name = "saveGroupToolStripMenuItem";
-            this.saveGroupToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.saveGroupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveGroupToolStripMenuItem.Text = "Save Group";
             // 
             // createGroupProgressBarToolStripMenuItem
@@ -138,11 +149,23 @@
             this.createGroupProgressBarToolStripMenuItem.Size = new System.Drawing.Size(157, 20);
             this.createGroupProgressBarToolStripMenuItem.Text = "Create Group Progress Bar";
             // 
+            // labelError
+            // 
+            this.labelError.AutoSize = true;
+            this.labelError.BackColor = System.Drawing.Color.Red;
+            this.labelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelError.Location = new System.Drawing.Point(193, 383);
+            this.labelError.Name = "labelError";
+            this.labelError.Size = new System.Drawing.Size(0, 18);
+            this.labelError.TabIndex = 6;
+            // 
             // IndividualProgress
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(517, 460);
+            this.Controls.Add(this.labelError);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.buttonAddStudent);
             this.Controls.Add(this.textBoxOutput);
@@ -172,6 +195,7 @@
         private System.Windows.Forms.ToolStripMenuItem newGroupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openGroupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveGroupToolStripMenuItem;
+        private System.Windows.Forms.Label labelError;
     }
 }
 

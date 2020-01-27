@@ -13,9 +13,11 @@ namespace ProgressBarAlternate
 {
     public partial class IndividualProgress : Form
     {
+        bool individualProgressNewGroupCreated;
         public IndividualProgress()
         {
             InitializeComponent();
+            
         }
 
         private void ButtonAddStudent_Click(object sender, EventArgs e)
@@ -26,19 +28,48 @@ namespace ProgressBarAlternate
 
             textBoxName.Text = "";
 
-            //CB 2020-01-24 Writing the name and the level to the CSV file
-            TextWriter tw = new StreamWriter(@"D:\Coding Club\Teacher Toolkit\Progress Bar\currentList.csv");
-            tw.WriteLine(studentName + ", " + currentLevel);
-            tw.Close();
-
-            //CB 2020-01-24 Reading the lines in the CSV file
-            TextReader tr = new StreamReader(@"D:\Coding Club\Teacher Toolkit\Progress Bar\currentList.csv");
-            string ln;
-            while ((ln = tr.ReadLine()) != null)
+            try
             {
-                textBoxOutput.Text += ln + "\r\n";
+                //CB 2020-01-24 Writing the name and the level to the CSV file
+                TextWriter tw = new StreamWriter(@"Documents");
+                tw.WriteLine(studentName + ", " + currentLevel);
+                tw.Close();
+
+                //CB 2020-01-24 Reading the lines in the CSV file
+                TextReader tr = new StreamReader(@"Documents");
+                string ln;
+                while ((ln = tr.ReadLine()) != null)
+                {
+                    textBoxOutput.Text += ln + "\r\n";
+                }
+                tr.Close();
             }
-            tr.Close();
+
+            catch (FileNotFoundException)
+            {
+                labelError.Text = "FILE NOT FOUND";
+            }
+        }
+
+        private void NewGroupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewGroup newGroup = new NewGroup();
+            newGroup.ShowDialog();
+            newGroup.Close();
+
+            individualProgressNewGroupCreated = NewGroup.newGroupCreated;
+
+            if (individualProgressNewGroupCreated == false)
+            { 
+                textBoxOutput.Text = textBoxOutput.Text;
+            }
+
+            else
+            {
+                textBoxOutput.Text = "";
+            }
+
+            
         }
     }
 }
