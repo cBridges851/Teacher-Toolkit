@@ -36,12 +36,13 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveGroupAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createGroupProgressBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelOutput = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.richTextBoxOutput = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,41 +109,42 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newGroupToolStripMenuItem,
             this.openGroupToolStripMenuItem,
+            this.saveGroupAsToolStripMenuItem,
             this.saveGroupToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
+            this.fileToolStripMenuItem.Text = "File";
             // 
             // newGroupToolStripMenuItem
             // 
             this.newGroupToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
             this.newGroupToolStripMenuItem.Name = "newGroupToolStripMenuItem";
-            this.newGroupToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.newGroupToolStripMenuItem.Text = "&New Group";
+            this.newGroupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newGroupToolStripMenuItem.Text = "New Group";
             this.newGroupToolStripMenuItem.Click += new System.EventHandler(this.NewGroupToolStripMenuItem_Click);
             // 
             // openGroupToolStripMenuItem
             // 
             this.openGroupToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
             this.openGroupToolStripMenuItem.Name = "openGroupToolStripMenuItem";
-            this.openGroupToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.openGroupToolStripMenuItem.Text = "&Open Group";
+            this.openGroupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openGroupToolStripMenuItem.Text = "Open Group";
             this.openGroupToolStripMenuItem.Click += new System.EventHandler(this.OpenGroupToolStripMenuItem_Click);
             // 
-            // saveGroupToolStripMenuItem
+            // saveGroupAsToolStripMenuItem
             // 
-            this.saveGroupToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.saveGroupToolStripMenuItem.Name = "saveGroupToolStripMenuItem";
-            this.saveGroupToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.saveGroupToolStripMenuItem.Text = "&Save Group";
-            this.saveGroupToolStripMenuItem.Click += new System.EventHandler(this.SaveGroupToolStripMenuItem_Click);
+            this.saveGroupAsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.saveGroupAsToolStripMenuItem.Name = "saveGroupAsToolStripMenuItem";
+            this.saveGroupAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveGroupAsToolStripMenuItem.Text = "Save Group As...";
+            this.saveGroupAsToolStripMenuItem.Click += new System.EventHandler(this.SaveGroupToolStripMenuItem_Click);
             // 
             // createGroupProgressBarToolStripMenuItem
             // 
             this.createGroupProgressBarToolStripMenuItem.Name = "createGroupProgressBarToolStripMenuItem";
             this.createGroupProgressBarToolStripMenuItem.Size = new System.Drawing.Size(157, 20);
-            this.createGroupProgressBarToolStripMenuItem.Text = "&Create Group Progress Bar";
+            this.createGroupProgressBarToolStripMenuItem.Text = "Create Group Progress Bar";
             // 
             // labelOutput
             // 
@@ -172,6 +174,14 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // saveGroupToolStripMenuItem
+            // 
+            this.saveGroupToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.saveGroupToolStripMenuItem.Name = "saveGroupToolStripMenuItem";
+            this.saveGroupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveGroupToolStripMenuItem.Text = "Save Group";
+            this.saveGroupToolStripMenuItem.Click += new System.EventHandler(this.SaveGroupToolStripMenuItem_Click_1);
             // 
             // IndividualProgress
             // 
@@ -207,11 +217,12 @@
         private System.Windows.Forms.ToolStripMenuItem createGroupProgressBarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newGroupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openGroupToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveGroupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveGroupAsToolStripMenuItem;
         private System.Windows.Forms.Label labelOutput;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.RichTextBox richTextBoxOutput;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem saveGroupToolStripMenuItem;
     }
 }
 

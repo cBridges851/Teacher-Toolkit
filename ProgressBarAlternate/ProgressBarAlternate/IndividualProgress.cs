@@ -82,20 +82,17 @@ namespace ProgressBarAlternate
 
         }
 
+
+        //CB 2020-01-28 Save As
         private void SaveGroupToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-                {
-                    richTextBoxOutput.SaveFile(saveFileDialog1.FileName);
-                }
+                richTextBoxOutput.SaveFile(saveFileDialog1.FileName);
             }
 
-            catch (Exception ex)
-            {
-                labelOutput.Text = "ERROR: " + ex;
-            }
+
         }
 
 
@@ -105,6 +102,13 @@ namespace ProgressBarAlternate
             {
                 ButtonAddStudent_Click(this, new EventArgs());
             }
+        }
+
+
+        //CB 2020-01-28 Save
+        private void SaveGroupToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            richTextBoxOutput.SaveFile(saveFileDialog1.FileName);
         }
     }
 }
