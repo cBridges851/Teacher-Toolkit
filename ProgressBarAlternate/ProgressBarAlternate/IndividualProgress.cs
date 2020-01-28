@@ -17,7 +17,7 @@ namespace ProgressBarAlternate
         public IndividualProgress()
         {
             InitializeComponent();
-            
+
         }
 
         private void ButtonAddStudent_Click(object sender, EventArgs e)
@@ -40,14 +40,14 @@ namespace ProgressBarAlternate
                 string ln;
                 while ((ln = tr.ReadLine()) != null)
                 {
-                    textBoxOutput.Text += ln + "\r\n";
+                    richTextBoxOutput.Text += ln + "\r\n";
                 }
                 tr.Close();
             }
 
             catch (FileNotFoundException)
             {
-                labelError.Text = "FILE NOT FOUND";
+                labelOutput.Text = "FILE NOT FOUND";
             }
         }
 
@@ -60,16 +60,51 @@ namespace ProgressBarAlternate
             individualProgressNewGroupCreated = NewGroup.newGroupCreated;
 
             if (individualProgressNewGroupCreated == false)
-            { 
-                textBoxOutput.Text = textBoxOutput.Text;
+            {
+                richTextBoxOutput.Text = richTextBoxOutput.Text;
             }
 
             else
             {
-                textBoxOutput.Text = "";
+                richTextBoxOutput.Text = "";
             }
 
-            
+
+        }
+
+        private void OpenGroupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richTextBoxOutput.LoadFile(openFileDialog1.FileName);
+            }
+
+        }
+
+        private void SaveGroupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    richTextBoxOutput.SaveFile(saveFileDialog1.FileName);
+                }
+            }
+
+            catch (Exception ex)
+            {
+                labelOutput.Text = "ERROR: " + ex;
+            }
+        }
+
+
+        private void TextBoxName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                ButtonAddStudent_Click(this, new EventArgs());
+            }
         }
     }
 }

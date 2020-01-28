@@ -30,7 +30,6 @@
         {
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.domainUpDownLevel = new System.Windows.Forms.DomainUpDown();
-            this.textBoxOutput = new System.Windows.Forms.TextBox();
             this.buttonAddStudent = new System.Windows.Forms.Button();
             this.labelName = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -39,7 +38,10 @@
             this.openGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createGroupProgressBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelError = new System.Windows.Forms.Label();
+            this.labelOutput = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.richTextBoxOutput = new System.Windows.Forms.RichTextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +51,7 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(134, 20);
             this.textBoxName.TabIndex = 0;
+            this.textBoxName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxName_KeyDown);
             // 
             // domainUpDownLevel
             // 
@@ -64,16 +67,6 @@
             this.domainUpDownLevel.Size = new System.Drawing.Size(260, 20);
             this.domainUpDownLevel.TabIndex = 1;
             this.domainUpDownLevel.Text = "Novice";
-            // 
-            // textBoxOutput
-            // 
-            this.textBoxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOutput.Location = new System.Drawing.Point(15, 36);
-            this.textBoxOutput.Multiline = true;
-            this.textBoxOutput.Name = "textBoxOutput";
-            this.textBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxOutput.Size = new System.Drawing.Size(490, 289);
-            this.textBoxOutput.TabIndex = 2;
             // 
             // buttonAddStudent
             // 
@@ -119,45 +112,66 @@
             this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Text = "&File";
             // 
             // newGroupToolStripMenuItem
             // 
             this.newGroupToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
             this.newGroupToolStripMenuItem.Name = "newGroupToolStripMenuItem";
-            this.newGroupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newGroupToolStripMenuItem.Text = "New Group";
+            this.newGroupToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.newGroupToolStripMenuItem.Text = "&New Group";
             this.newGroupToolStripMenuItem.Click += new System.EventHandler(this.NewGroupToolStripMenuItem_Click);
             // 
             // openGroupToolStripMenuItem
             // 
             this.openGroupToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
             this.openGroupToolStripMenuItem.Name = "openGroupToolStripMenuItem";
-            this.openGroupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.openGroupToolStripMenuItem.Text = "Open Group";
+            this.openGroupToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.openGroupToolStripMenuItem.Text = "&Open Group";
+            this.openGroupToolStripMenuItem.Click += new System.EventHandler(this.OpenGroupToolStripMenuItem_Click);
             // 
             // saveGroupToolStripMenuItem
             // 
             this.saveGroupToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
             this.saveGroupToolStripMenuItem.Name = "saveGroupToolStripMenuItem";
-            this.saveGroupToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveGroupToolStripMenuItem.Text = "Save Group";
+            this.saveGroupToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.saveGroupToolStripMenuItem.Text = "&Save Group";
+            this.saveGroupToolStripMenuItem.Click += new System.EventHandler(this.SaveGroupToolStripMenuItem_Click);
             // 
             // createGroupProgressBarToolStripMenuItem
             // 
             this.createGroupProgressBarToolStripMenuItem.Name = "createGroupProgressBarToolStripMenuItem";
             this.createGroupProgressBarToolStripMenuItem.Size = new System.Drawing.Size(157, 20);
-            this.createGroupProgressBarToolStripMenuItem.Text = "Create Group Progress Bar";
+            this.createGroupProgressBarToolStripMenuItem.Text = "&Create Group Progress Bar";
             // 
-            // labelError
+            // labelOutput
             // 
-            this.labelError.AutoSize = true;
-            this.labelError.BackColor = System.Drawing.Color.Red;
-            this.labelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelError.Location = new System.Drawing.Point(193, 383);
-            this.labelError.Name = "labelError";
-            this.labelError.Size = new System.Drawing.Size(0, 18);
-            this.labelError.TabIndex = 6;
+            this.labelOutput.AutoSize = true;
+            this.labelOutput.BackColor = System.Drawing.Color.Transparent;
+            this.labelOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOutput.ForeColor = System.Drawing.Color.Red;
+            this.labelOutput.Location = new System.Drawing.Point(193, 383);
+            this.labelOutput.Name = "labelOutput";
+            this.labelOutput.Size = new System.Drawing.Size(0, 18);
+            this.labelOutput.TabIndex = 6;
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "Text Document|*.txt";
+            // 
+            // richTextBoxOutput
+            // 
+            this.richTextBoxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxOutput.Location = new System.Drawing.Point(12, 39);
+            this.richTextBoxOutput.Name = "richTextBoxOutput";
+            this.richTextBoxOutput.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.richTextBoxOutput.Size = new System.Drawing.Size(493, 294);
+            this.richTextBoxOutput.TabIndex = 7;
+            this.richTextBoxOutput.Text = "";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // IndividualProgress
             // 
@@ -165,10 +179,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(517, 460);
-            this.Controls.Add(this.labelError);
+            this.Controls.Add(this.richTextBoxOutput);
+            this.Controls.Add(this.labelOutput);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.buttonAddStudent);
-            this.Controls.Add(this.textBoxOutput);
             this.Controls.Add(this.domainUpDownLevel);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.menuStrip1);
@@ -186,7 +200,6 @@
 
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.DomainUpDown domainUpDownLevel;
-        private System.Windows.Forms.TextBox textBoxOutput;
         private System.Windows.Forms.Button buttonAddStudent;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -195,7 +208,10 @@
         private System.Windows.Forms.ToolStripMenuItem newGroupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openGroupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveGroupToolStripMenuItem;
-        private System.Windows.Forms.Label labelError;
+        private System.Windows.Forms.Label labelOutput;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.RichTextBox richTextBoxOutput;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
