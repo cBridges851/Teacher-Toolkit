@@ -114,47 +114,47 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 57);
+            this.label1.Location = new System.Drawing.Point(24, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.Size = new System.Drawing.Size(84, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "Number of dice";
             // 
             // radioButtonDiceOne
             // 
-            this.radioButtonDiceOne.AutoSize = true;
-            this.radioButtonDiceOne.Location = new System.Drawing.Point(157, 57);
+            this.radioButtonDiceOne.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonDiceOne.Location = new System.Drawing.Point(123, 40);
             this.radioButtonDiceOne.Name = "radioButtonDiceOne";
-            this.radioButtonDiceOne.Size = new System.Drawing.Size(31, 17);
+            this.radioButtonDiceOne.Size = new System.Drawing.Size(65, 40);
             this.radioButtonDiceOne.TabIndex = 9;
             this.radioButtonDiceOne.TabStop = true;
-            this.radioButtonDiceOne.Text = "1";
+            this.radioButtonDiceOne.Text = "       1";
             this.radioButtonDiceOne.UseVisualStyleBackColor = true;
             this.radioButtonDiceOne.CheckedChanged += new System.EventHandler(this.radioButtonDiceOne_CheckedChanged);
             // 
             // radioButtonDiceTwo
             // 
-            this.radioButtonDiceTwo.AutoSize = true;
-            this.radioButtonDiceTwo.Location = new System.Drawing.Point(212, 57);
+            this.radioButtonDiceTwo.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonDiceTwo.Location = new System.Drawing.Point(207, 40);
             this.radioButtonDiceTwo.Name = "radioButtonDiceTwo";
-            this.radioButtonDiceTwo.Size = new System.Drawing.Size(31, 17);
+            this.radioButtonDiceTwo.Size = new System.Drawing.Size(65, 40);
             this.radioButtonDiceTwo.TabIndex = 10;
             this.radioButtonDiceTwo.TabStop = true;
-            this.radioButtonDiceTwo.Text = "2";
+            this.radioButtonDiceTwo.Text = "       2";
             this.radioButtonDiceTwo.UseVisualStyleBackColor = true;
             this.radioButtonDiceTwo.CheckedChanged += new System.EventHandler(this.radioButtonDiceTwo_CheckedChanged);
             // 
             // radioButtonDiceThree
             // 
-            this.radioButtonDiceThree.AutoSize = true;
-            this.radioButtonDiceThree.Location = new System.Drawing.Point(269, 57);
+            this.radioButtonDiceThree.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButtonDiceThree.BackColor = System.Drawing.Color.Red;
+            this.radioButtonDiceThree.Location = new System.Drawing.Point(289, 40);
             this.radioButtonDiceThree.Name = "radioButtonDiceThree";
-            this.radioButtonDiceThree.Size = new System.Drawing.Size(31, 17);
+            this.radioButtonDiceThree.Size = new System.Drawing.Size(65, 40);
             this.radioButtonDiceThree.TabIndex = 11;
             this.radioButtonDiceThree.TabStop = true;
-            this.radioButtonDiceThree.Text = "3";
-            this.radioButtonDiceThree.UseVisualStyleBackColor = true;
+            this.radioButtonDiceThree.Text = "       3";
+            this.radioButtonDiceThree.UseVisualStyleBackColor = false;
             this.radioButtonDiceThree.CheckedChanged += new System.EventHandler(this.radioButtonDiceThree_CheckedChanged);
             // 
             // Dice

@@ -141,6 +141,10 @@ namespace Dice
                 textBoxDiceOne.Visible = true;
                 textBoxDiceTwo.Visible = false;
                 textBoxDiceThree.Visible = false;
+
+                radioButtonDiceOne.BackColor = Color.Red;
+                radioButtonDiceTwo.BackColor = Color.White;
+                radioButtonDiceThree.BackColor = Color.White;
             }
         }
 
@@ -157,6 +161,10 @@ namespace Dice
                 textBoxDiceOne.Visible = true;
                 textBoxDiceTwo.Visible = true;
                 textBoxDiceThree.Visible = false;
+
+                radioButtonDiceOne.BackColor = Color.White;
+                radioButtonDiceTwo.BackColor = Color.Red;
+                radioButtonDiceThree.BackColor = Color.White;
             }
         }
 
@@ -173,6 +181,10 @@ namespace Dice
                 textBoxDiceOne.Visible = true;
                 textBoxDiceTwo.Visible = true;
                 textBoxDiceThree.Visible = true;
+
+                radioButtonDiceOne.BackColor = Color.White;
+                radioButtonDiceTwo.BackColor = Color.White;
+                radioButtonDiceThree.BackColor = Color.Red;
             }
         }
     }
