@@ -17,3 +17,12 @@ E:\Coding Club\Visual Studio\Dice\Dice\obj\Debug\Dice.Properties.Resources.resou
 E:\Coding Club\Visual Studio\Dice\Dice\obj\Debug\Dice.csproj.GenerateResource.cache
 E:\Coding Club\Visual Studio\Dice\Dice\obj\Debug\Dice.exe
 E:\Coding Club\Visual Studio\Dice\Dice\obj\Debug\Dice.pdb
+C:\Users\Jack\Desktop\Teacher-Toolkit-Dice\Dice\Dice\bin\Debug\Dice.exe.config
+C:\Users\Jack\Desktop\Teacher-Toolkit-Dice\Dice\Dice\bin\Debug\Dice.exe
+C:\Users\Jack\Desktop\Teacher-Toolkit-Dice\Dice\Dice\bin\Debug\Dice.pdb
+C:\Users\Jack\Desktop\Teacher-Toolkit-Dice\Dice\Dice\obj\Debug\Dice.csprojAssemblyReference.cache
+C:\Users\Jack\Desktop\Teacher-Toolkit-Dice\Dice\Dice\obj\Debug\Dice.Dice.resources
+C:\Users\Jack\Desktop\Teacher-Toolkit-Dice\Dice\Dice\obj\Debug\Dice.Properties.Resources.resources
+C:\Users\Jack\Desktop\Teacher-Toolkit-Dice\Dice\Dice\obj\Debug\Dice.csproj.GenerateResource.cache
+C:\Users\Jack\Desktop\Teacher-Toolkit-Dice\Dice\Dice\obj\Debug\Dice.exe
+C:\Users\Jack\Desktop\Teacher-Toolkit-Dice\Dice\Dice\obj\Debug\Dice.pdb

@@ -16,14 +16,31 @@ namespace Dice
         {
             InitializeComponent();
         }
-
+        //JGS 2020-02-12 13:42
+        // Declare Variables so they can be checked for a value before initial RNG
+        int rndDiceOne = 0;
+        int rndDiceTwo = 0;
+        int rndDiceThree = 0;
+        int lastRollOne;
+        int lastRollTwo;
+        int lastRollThree;
         private void Button1_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
+            //JGS 2020-02-12 13:42
+            // Checks if there has been a previous roll
+            // If there has, save each roll to new Int
+            if (rndDiceOne != 0)
+            {
+                lastRollOne = rndDiceOne;
+                lastRollTwo = rndDiceTwo;
+                lastRollThree = rndDiceThree;
+            }
 
-            int rndDiceOne = rnd.Next(1, 7);
-            int rndDiceTwo = rnd.Next(1, 7);
-            int rndDiceThree = rnd.Next(1, 7);
+
+            rndDiceOne = rnd.Next(1, 7);
+            rndDiceTwo = rnd.Next(1, 7);
+            rndDiceThree = rnd.Next(1, 7);
 
             //KJL 2020-01-26 18:51
             //Check dice one for its number and load corresponding image
@@ -126,6 +143,15 @@ namespace Dice
             textBoxDiceOne.Text = Convert.ToString(rndDiceOne);
             textBoxDiceTwo.Text = Convert.ToString(rndDiceTwo);
             textBoxDiceThree.Text = Convert.ToString(rndDiceThree);
+            //JGS 2020-02-12 13:42
+            // Checks if there has been a previous roll
+            // If there has, apply the value to Last Roll Text
+            if (lastRollOne != 0)
+            {
+                textBoxLastRollOne.Text = Convert.ToString(lastRollOne);
+                textBoxLastRollTwo.Text = Convert.ToString(lastRollTwo);
+                textBoxLastRollThree.Text = Convert.ToString(lastRollThree);
+            }
         }
 
         //KJL 2020-01-26 21:37
@@ -141,6 +167,18 @@ namespace Dice
                 textBoxDiceOne.Visible = true;
                 textBoxDiceTwo.Visible = false;
                 textBoxDiceThree.Visible = false;
+
+                textBoxLastRollOne.Visible = true;
+                textBoxLastRollTwo.Visible = false;
+                textBoxLastRollThree.Visible = false;
+
+                lastRollOneLabel.Visible = true;
+                lastRollTwoLabel.Visible = false;
+                lastRollThreeLabel.Visible = false;
+
+                currentRollOneLabel.Visible = true;
+                currentRollTwoLabel.Visible = false;
+                currentRollThreeLabel.Visible = false;
 
                 radioButtonDiceOne.BackColor = Color.Red;
                 radioButtonDiceTwo.BackColor = Color.White;
@@ -162,6 +200,18 @@ namespace Dice
                 textBoxDiceTwo.Visible = true;
                 textBoxDiceThree.Visible = false;
 
+                textBoxLastRollOne.Visible = true;
+                textBoxLastRollTwo.Visible = true;
+                textBoxLastRollThree.Visible = false;
+
+                lastRollOneLabel.Visible = true;
+                lastRollTwoLabel.Visible = true;
+                lastRollThreeLabel.Visible = false;
+
+                currentRollOneLabel.Visible = true;
+                currentRollTwoLabel.Visible = true;
+                currentRollThreeLabel.Visible = false;
+
                 radioButtonDiceOne.BackColor = Color.White;
                 radioButtonDiceTwo.BackColor = Color.Red;
                 radioButtonDiceThree.BackColor = Color.White;
@@ -181,6 +231,18 @@ namespace Dice
                 textBoxDiceOne.Visible = true;
                 textBoxDiceTwo.Visible = true;
                 textBoxDiceThree.Visible = true;
+
+                textBoxLastRollOne.Visible = true;
+                textBoxLastRollTwo.Visible = true;
+                textBoxLastRollThree.Visible = true;
+
+                lastRollOneLabel.Visible = true;
+                lastRollTwoLabel.Visible = true;
+                lastRollThreeLabel.Visible = true;
+
+                currentRollOneLabel.Visible = true;
+                currentRollTwoLabel.Visible = true;
+                currentRollThreeLabel.Visible = true;
 
                 radioButtonDiceOne.BackColor = Color.White;
                 radioButtonDiceTwo.BackColor = Color.White;

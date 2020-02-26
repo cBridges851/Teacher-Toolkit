@@ -40,6 +40,15 @@
             this.radioButtonDiceOne = new System.Windows.Forms.RadioButton();
             this.radioButtonDiceTwo = new System.Windows.Forms.RadioButton();
             this.radioButtonDiceThree = new System.Windows.Forms.RadioButton();
+            this.textBoxLastRollThree = new System.Windows.Forms.TextBox();
+            this.textBoxLastRollTwo = new System.Windows.Forms.TextBox();
+            this.textBoxLastRollOne = new System.Windows.Forms.TextBox();
+            this.currentRollTwoLabel = new System.Windows.Forms.Label();
+            this.currentRollThreeLabel = new System.Windows.Forms.Label();
+            this.currentRollOneLabel = new System.Windows.Forms.Label();
+            this.lastRollOneLabel = new System.Windows.Forms.Label();
+            this.lastRollTwoLabel = new System.Windows.Forms.Label();
+            this.lastRollThreeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiceOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiceTwo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiceThree)).BeginInit();
@@ -47,7 +56,7 @@
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(356, 461);
+            this.buttonStart.Location = new System.Drawing.Point(354, 461);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(121, 33);
             this.buttonStart.TabIndex = 0;
@@ -59,6 +68,7 @@
             // 
             this.textBoxDiceOne.Location = new System.Drawing.Point(91, 383);
             this.textBoxDiceOne.Name = "textBoxDiceOne";
+            this.textBoxDiceOne.ReadOnly = true;
             this.textBoxDiceOne.Size = new System.Drawing.Size(97, 20);
             this.textBoxDiceOne.TabIndex = 1;
             // 
@@ -66,6 +76,7 @@
             // 
             this.textBoxDiceTwo.Location = new System.Drawing.Point(365, 383);
             this.textBoxDiceTwo.Name = "textBoxDiceTwo";
+            this.textBoxDiceTwo.ReadOnly = true;
             this.textBoxDiceTwo.Size = new System.Drawing.Size(100, 20);
             this.textBoxDiceTwo.TabIndex = 2;
             // 
@@ -89,7 +100,7 @@
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(861, 22);
+            this.buttonBack.Location = new System.Drawing.Point(732, 12);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
             this.buttonBack.TabIndex = 5;
@@ -109,6 +120,7 @@
             // 
             this.textBoxDiceThree.Location = new System.Drawing.Point(633, 383);
             this.textBoxDiceThree.Name = "textBoxDiceThree";
+            this.textBoxDiceThree.ReadOnly = true;
             this.textBoxDiceThree.Size = new System.Drawing.Size(100, 20);
             this.textBoxDiceThree.TabIndex = 7;
             // 
@@ -157,12 +169,99 @@
             this.radioButtonDiceThree.UseVisualStyleBackColor = false;
             this.radioButtonDiceThree.CheckedChanged += new System.EventHandler(this.radioButtonDiceThree_CheckedChanged);
             // 
+            // textBoxLastRollThree
+            // 
+            this.textBoxLastRollThree.Location = new System.Drawing.Point(633, 423);
+            this.textBoxLastRollThree.Name = "textBoxLastRollThree";
+            this.textBoxLastRollThree.ReadOnly = true;
+            this.textBoxLastRollThree.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLastRollThree.TabIndex = 12;
+            // 
+            // textBoxLastRollTwo
+            // 
+            this.textBoxLastRollTwo.Location = new System.Drawing.Point(365, 423);
+            this.textBoxLastRollTwo.Name = "textBoxLastRollTwo";
+            this.textBoxLastRollTwo.ReadOnly = true;
+            this.textBoxLastRollTwo.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLastRollTwo.TabIndex = 13;
+            // 
+            // textBoxLastRollOne
+            // 
+            this.textBoxLastRollOne.Location = new System.Drawing.Point(94, 423);
+            this.textBoxLastRollOne.Name = "textBoxLastRollOne";
+            this.textBoxLastRollOne.ReadOnly = true;
+            this.textBoxLastRollOne.Size = new System.Drawing.Size(97, 20);
+            this.textBoxLastRollOne.TabIndex = 14;
+            // 
+            // currentRollTwoLabel
+            // 
+            this.currentRollTwoLabel.Location = new System.Drawing.Point(362, 366);
+            this.currentRollTwoLabel.Name = "currentRollTwoLabel";
+            this.currentRollTwoLabel.Size = new System.Drawing.Size(103, 14);
+            this.currentRollTwoLabel.TabIndex = 15;
+            this.currentRollTwoLabel.Text = "Current Roll:";
+            this.currentRollTwoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // currentRollThreeLabel
+            // 
+            this.currentRollThreeLabel.Location = new System.Drawing.Point(630, 366);
+            this.currentRollThreeLabel.Name = "currentRollThreeLabel";
+            this.currentRollThreeLabel.Size = new System.Drawing.Size(103, 14);
+            this.currentRollThreeLabel.TabIndex = 16;
+            this.currentRollThreeLabel.Text = "Current Roll:";
+            this.currentRollThreeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // currentRollOneLabel
+            // 
+            this.currentRollOneLabel.Location = new System.Drawing.Point(91, 366);
+            this.currentRollOneLabel.Name = "currentRollOneLabel";
+            this.currentRollOneLabel.Size = new System.Drawing.Size(97, 14);
+            this.currentRollOneLabel.TabIndex = 17;
+            this.currentRollOneLabel.Text = "Current Roll:";
+            this.currentRollOneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lastRollOneLabel
+            // 
+            this.lastRollOneLabel.Location = new System.Drawing.Point(91, 406);
+            this.lastRollOneLabel.Name = "lastRollOneLabel";
+            this.lastRollOneLabel.Size = new System.Drawing.Size(97, 14);
+            this.lastRollOneLabel.TabIndex = 18;
+            this.lastRollOneLabel.Text = "Last Roll:";
+            this.lastRollOneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lastRollTwoLabel
+            // 
+            this.lastRollTwoLabel.Location = new System.Drawing.Point(362, 406);
+            this.lastRollTwoLabel.Name = "lastRollTwoLabel";
+            this.lastRollTwoLabel.Size = new System.Drawing.Size(103, 14);
+            this.lastRollTwoLabel.TabIndex = 19;
+            this.lastRollTwoLabel.Text = "Last Roll:";
+            this.lastRollTwoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lastRollThreeLabel
+            // 
+            this.lastRollThreeLabel.Location = new System.Drawing.Point(630, 406);
+            this.lastRollThreeLabel.Name = "lastRollThreeLabel";
+            this.lastRollThreeLabel.Size = new System.Drawing.Size(103, 14);
+            this.lastRollThreeLabel.TabIndex = 20;
+            this.lastRollThreeLabel.Text = "Last Roll:";
+            this.lastRollThreeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Dice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(953, 620);
+            this.ClientSize = new System.Drawing.Size(833, 523);
+            this.Controls.Add(this.lastRollThreeLabel);
+            this.Controls.Add(this.lastRollTwoLabel);
+            this.Controls.Add(this.lastRollOneLabel);
+            this.Controls.Add(this.currentRollOneLabel);
+            this.Controls.Add(this.currentRollThreeLabel);
+            this.Controls.Add(this.currentRollTwoLabel);
+            this.Controls.Add(this.textBoxLastRollOne);
+            this.Controls.Add(this.textBoxLastRollTwo);
+            this.Controls.Add(this.textBoxLastRollThree);
             this.Controls.Add(this.radioButtonDiceThree);
             this.Controls.Add(this.radioButtonDiceTwo);
             this.Controls.Add(this.radioButtonDiceOne);
@@ -199,6 +298,15 @@
         private System.Windows.Forms.RadioButton radioButtonDiceOne;
         private System.Windows.Forms.RadioButton radioButtonDiceTwo;
         private System.Windows.Forms.RadioButton radioButtonDiceThree;
+        private System.Windows.Forms.TextBox textBoxLastRollThree;
+        private System.Windows.Forms.TextBox textBoxLastRollTwo;
+        private System.Windows.Forms.TextBox textBoxLastRollOne;
+        private System.Windows.Forms.Label currentRollTwoLabel;
+        private System.Windows.Forms.Label currentRollThreeLabel;
+        private System.Windows.Forms.Label currentRollOneLabel;
+        private System.Windows.Forms.Label lastRollOneLabel;
+        private System.Windows.Forms.Label lastRollTwoLabel;
+        private System.Windows.Forms.Label lastRollThreeLabel;
     }
 }
 
