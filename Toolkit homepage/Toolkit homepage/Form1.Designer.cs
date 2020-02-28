@@ -36,6 +36,10 @@
             this.otherToolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopwatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonBlooms = new System.Windows.Forms.Button();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.provideFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutTeacherToolkitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +86,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.otherToolsToolStripMenuItem});
+            this.otherToolsToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -113,6 +118,34 @@
             this.buttonBlooms.Text = "Blooms";
             this.buttonBlooms.UseVisualStyleBackColor = true;
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewHelpToolStripMenuItem,
+            this.provideFeedbackToolStripMenuItem,
+            this.aboutTeacherToolkitToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // viewHelpToolStripMenuItem
+            // 
+            this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
+            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.viewHelpToolStripMenuItem.Text = "View Help";
+            // 
+            // provideFeedbackToolStripMenuItem
+            // 
+            this.provideFeedbackToolStripMenuItem.Name = "provideFeedbackToolStripMenuItem";
+            this.provideFeedbackToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.provideFeedbackToolStripMenuItem.Text = "Provide Feedback";
+            // 
+            // aboutTeacherToolkitToolStripMenuItem
+            // 
+            this.aboutTeacherToolkitToolStripMenuItem.Name = "aboutTeacherToolkitToolStripMenuItem";
+            this.aboutTeacherToolkitToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.aboutTeacherToolkitToolStripMenuItem.Text = "About Teacher Toolkit";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,7 +159,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Teacher Toolkit";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -144,6 +177,10 @@
         private System.Windows.Forms.ToolStripMenuItem otherToolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stopwatchToolStripMenuItem;
         private System.Windows.Forms.Button buttonBlooms;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewHelpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem provideFeedbackToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutTeacherToolkitToolStripMenuItem;
     }
 }
 
