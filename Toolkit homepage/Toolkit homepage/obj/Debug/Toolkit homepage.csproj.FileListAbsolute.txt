@@ -1,0 +1,10 @@
+\\scg.shrewsbury.ac.uk\files\LR\Student_Documents\06000474\Documents\Year 2\Coding club projects\Toolkit homepage\Toolkit homepage\bin\Debug\Toolkit homepage.exe.config
+\\scg.shrewsbury.ac.uk\files\LR\Student_Documents\06000474\Documents\Year 2\Coding club projects\Toolkit homepage\Toolkit homepage\bin\Debug\Toolkit homepage.exe
+\\scg.shrewsbury.ac.uk\files\LR\Student_Documents\06000474\Documents\Year 2\Coding club projects\Toolkit homepage\Toolkit homepage\bin\Debug\Toolkit homepage.pdb
+\\scg.shrewsbury.ac.uk\files\LR\Student_Documents\06000474\Documents\Year 2\Coding club projects\Toolkit homepage\Toolkit homepage\obj\Debug\Toolkit homepage.csprojAssemblyReference.cache
+\\scg.shrewsbury.ac.uk\files\LR\Student_Documents\06000474\Documents\Year 2\Coding club projects\Toolkit homepage\Toolkit homepage\obj\Debug\Toolkit_homepage.Form1.resources
+\\scg.shrewsbury.ac.uk\files\LR\Student_Documents\06000474\Documents\Year 2\Coding club projects\Toolkit homepage\Toolkit homepage\obj\Debug\Toolkit_homepage.Properties.Resources.resources
+\\scg.shrewsbury.ac.uk\files\LR\Student_Documents\06000474\Documents\Year 2\Coding club projects\Toolkit homepage\Toolkit homepage\obj\Debug\Toolkit homepage.csproj.GenerateResource.cache
+\\scg.shrewsbury.ac.uk\files\LR\Student_Documents\06000474\Documents\Year 2\Coding club projects\Toolkit homepage\Toolkit homepage\obj\Debug\Toolkit homepage.csproj.CoreCompileInputs.cache
+\\scg.shrewsbury.ac.uk\files\LR\Student_Documents\06000474\Documents\Year 2\Coding club projects\Toolkit homepage\Toolkit homepage\obj\Debug\Toolkit homepage.exe
+\\scg.shrewsbury.ac.uk\files\LR\Student_Documents\06000474\Documents\Year 2\Coding club projects\Toolkit homepage\Toolkit homepage\obj\Debug\Toolkit homepage.pdb
