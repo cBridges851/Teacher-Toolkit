@@ -1,0 +1,11 @@
+D:\Coding Club\Teacher Toolkit\Timer\Timer\bin\Debug\Timer.exe.config
+D:\Coding Club\Teacher Toolkit\Timer\Timer\bin\Debug\Timer.exe
+D:\Coding Club\Teacher Toolkit\Timer\Timer\bin\Debug\Timer.pdb
+D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.csprojAssemblyReference.cache
+D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.Properties.Resources.resources
+D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.csproj.GenerateResource.cache
+D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.csproj.CoreCompileInputs.cache
+D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.exe
+D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.pdb
+D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.Timer.resources
+D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.TimeUpMessage.resources
