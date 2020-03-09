@@ -46,25 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Countdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Countdown.Designer.cs">
+      <DependentUpon>Countdown.cs</DependentUpon>
+    </Compile>
     <Compile Include="TimeUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TimeUp.Designer.cs">
       <DependentUpon>TimeUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Timer.cs">
+    <Compile Include="InputTime.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Timer.Designer.cs">
-      <DependentUpon>Timer.cs</DependentUpon>
+    <Compile Include="InputTime.Designer.cs">
+      <DependentUpon>InputTime.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Countdown.resx">
+      <DependentUpon>Countdown.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TimeUp.resx">
       <DependentUpon>TimeUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Timer.resx">
-      <DependentUpon>Timer.cs</DependentUpon>
+    <EmbeddedResource Include="InputTime.resx">
+      <DependentUpon>InputTime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

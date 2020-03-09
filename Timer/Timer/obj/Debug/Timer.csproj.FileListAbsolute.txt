@@ -7,5 +7,6 @@ D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.csproj.GenerateResour
 D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.csproj.CoreCompileInputs.cache
 D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.exe
 D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.pdb
-D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.Timer.resources
 D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.TimeUpMessage.resources
+D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.Countdown.resources
+D:\Coding Club\Teacher Toolkit\Timer\Timer\obj\Debug\Timer.InputTime.resources
