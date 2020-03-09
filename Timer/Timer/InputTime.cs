@@ -12,11 +12,10 @@ namespace Timer
 {
     public partial class InputTime : Form
     {
-        int hours;
-        int minutes;
-        int seconds;
+        public static int inputHours;
+        public static int inputMinutes;
+        public static int inputSeconds;
 
-        string countdownName;
 
         public InputTime()
         {
@@ -25,14 +24,22 @@ namespace Timer
 
         private void ButtonStart_Click(object sender, EventArgs e)
         {
-            hours = Convert.ToInt32(numericUpDownHours.Text);
-            minutes = Convert.ToInt32(numericUpDownMinutes.Text);
-            seconds = Convert.ToInt32(numericUpDownSeconds.Text);
+            try
+            {
+                labelOutput.Text = "";
+                inputHours = Convert.ToInt32(numericUpDownHours.Text);
+                inputMinutes = Convert.ToInt32(numericUpDownMinutes.Text);
+                inputSeconds = Convert.ToInt32(numericUpDownSeconds.Text);
 
-            countdownName = textBoxNameOfCountdown.Text;
 
-            Countdown startCountdown = new Countdown();
-            startCountdown.Show();
+                Countdown startCountdown = new Countdown();
+                startCountdown.Show();
+            }
+
+            catch (FormatException)
+            {
+                labelOutput.Text = "Please Input A Number";
+            }
         }
 
         private void Button30secs_Click(object sender, EventArgs e)

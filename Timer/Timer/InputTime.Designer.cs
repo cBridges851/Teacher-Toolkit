@@ -54,9 +54,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1hour30mins = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.textBoxNameOfCountdown = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelOutput = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSeconds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHours)).BeginInit();
@@ -66,7 +65,7 @@
             // numericUpDownMinutes
             // 
             this.numericUpDownMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownMinutes.Location = new System.Drawing.Point(214, 74);
+            this.numericUpDownMinutes.Location = new System.Drawing.Point(201, 58);
             this.numericUpDownMinutes.Maximum = new decimal(new int[] {
             59,
             0,
@@ -79,7 +78,8 @@
             // numericUpDownSeconds
             // 
             this.numericUpDownSeconds.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSeconds.Location = new System.Drawing.Point(350, 74);
+            this.numericUpDownSeconds.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.numericUpDownSeconds.Location = new System.Drawing.Point(337, 58);
             this.numericUpDownSeconds.Maximum = new decimal(new int[] {
             59,
             0,
@@ -93,7 +93,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(228, 55);
+            this.label2.Location = new System.Drawing.Point(215, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 16);
             this.label2.TabIndex = 5;
@@ -103,7 +103,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(364, 55);
+            this.label3.Location = new System.Drawing.Point(351, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 16);
             this.label3.TabIndex = 6;
@@ -113,7 +113,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(307, 76);
+            this.label5.Location = new System.Drawing.Point(294, 60);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 55);
             this.label5.TabIndex = 8;
@@ -121,7 +121,7 @@
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(197, 392);
+            this.buttonStart.Location = new System.Drawing.Point(185, 372);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(94, 30);
             this.buttonStart.TabIndex = 9;
@@ -297,7 +297,7 @@
             // numericUpDownHours
             // 
             this.numericUpDownHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownHours.Location = new System.Drawing.Point(78, 74);
+            this.numericUpDownHours.Location = new System.Drawing.Point(65, 58);
             this.numericUpDownHours.Maximum = new decimal(new int[] {
             59,
             0,
@@ -311,7 +311,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(171, 81);
+            this.label1.Location = new System.Drawing.Point(158, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 55);
             this.label1.TabIndex = 28;
@@ -321,7 +321,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(92, 55);
+            this.label4.Location = new System.Drawing.Point(79, 39);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 16);
             this.label4.TabIndex = 29;
@@ -340,32 +340,12 @@
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(395, 12);
+            this.buttonBack.Location = new System.Drawing.Point(410, 12);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
             this.buttonBack.TabIndex = 31;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
-            // 
-            // textBoxNameOfCountdown
-            // 
-            this.textBoxNameOfCountdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNameOfCountdown.Location = new System.Drawing.Point(145, 12);
-            this.textBoxNameOfCountdown.Name = "textBoxNameOfCountdown";
-            this.textBoxNameOfCountdown.Size = new System.Drawing.Size(208, 29);
-            this.textBoxNameOfCountdown.TabIndex = 32;
-            this.textBoxNameOfCountdown.Text = "Countdown 1";
-            this.textBoxNameOfCountdown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 16);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "Countdown Name:";
             // 
             // groupBox1
             // 
@@ -385,12 +365,22 @@
             this.groupBox1.Controls.Add(this.button10mins);
             this.groupBox1.Controls.Add(this.button20mins);
             this.groupBox1.Controls.Add(this.button15mins);
-            this.groupBox1.Location = new System.Drawing.Point(25, 142);
+            this.groupBox1.Location = new System.Drawing.Point(12, 126);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(445, 231);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Shortcuts";
+            // 
+            // labelOutput
+            // 
+            this.labelOutput.AutoSize = true;
+            this.labelOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOutput.ForeColor = System.Drawing.Color.Red;
+            this.labelOutput.Location = new System.Drawing.Point(135, 405);
+            this.labelOutput.Name = "labelOutput";
+            this.labelOutput.Size = new System.Drawing.Size(0, 24);
+            this.labelOutput.TabIndex = 35;
             // 
             // InputTime
             // 
@@ -398,9 +388,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(487, 434);
+            this.Controls.Add(this.labelOutput);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBoxNameOfCountdown);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
@@ -449,9 +438,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1hour30mins;
         private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.TextBox textBoxNameOfCountdown;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label labelOutput;
     }
 }
 
